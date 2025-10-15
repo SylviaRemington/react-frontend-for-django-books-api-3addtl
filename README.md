@@ -1,6 +1,6 @@
 # Project 4 Frontend Starter Code
 
-This starter code is a react application that can be used as the starting point. It is designed to work with the following authentication flow:
+This starter code is a react application that can be used as the starting point (created by Tristan Hall). It is designed to work with the following authentication flow:
 
 ## 🔐 Authentication
 
