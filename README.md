@@ -106,3 +106,5 @@ Setup: Create the .env and add the following text to it:
 ```plaintext
 VITE_BACK_END_SERVER_URL=http://localhost:8000/api
 ```
+
+- Also, in front end under src/services/userService you can delete line 20-22 and get ride of index from line 24.
