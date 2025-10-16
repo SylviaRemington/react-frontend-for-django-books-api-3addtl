@@ -21,12 +21,14 @@ const register = async (formData) => {
   }
 };
 
+
 const login = async (formData) => {
   try {
     const res = await axios.post(`${BASE_URL}/login/`, formData);
 
     const data = await res.data;
 
+    // If data token exists then save in local storage
     if (data.token) {
       localStorage.setItem("token", data.token);
 
