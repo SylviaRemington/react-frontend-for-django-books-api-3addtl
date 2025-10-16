@@ -79,6 +79,11 @@ class UserView(APIView):
         return Response(serialized_user.data, status=status.HTTP_200_OK)
 ```
 
+- Also make sure in authentication views.py that you have this imported at the top:
+- (underneath PermissionDenied section put this:)
+- # IsAuthenticated part add -- Tristan mentioned to add the below for better interactivity with react and django
+- from rest_framework.permissions import IsAuthenticated
+
 and then update your `authentication/urls.py` to include an endpoint to call
 
 ```python
