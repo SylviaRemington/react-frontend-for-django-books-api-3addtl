@@ -27,6 +27,7 @@ const App = () => {
     <>
       <NavBar />
       <Routes>
+        {/* If there is a user in the context we see that Dashboard; and if no user, we see the landing page. */}
         <Route path="/" element={user ? <Dashboard /> : <Landing />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
