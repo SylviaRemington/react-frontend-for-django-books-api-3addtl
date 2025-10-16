@@ -17,8 +17,4 @@ const getUser = async () => {
   }
 };
 
-const index = async () => {
-  return getUser();
-};
-
-export { index, getUser };
+export { getUser };
